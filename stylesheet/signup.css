@@ -35,11 +35,12 @@
     font-size: 14px;
     border-width: 1px;
 }
-
+input{
+    margin-left: 400px;
+}
 
 .container{
-    width:500px;
-    margin:  0 auto;
+    margin-left:440px;
      color:gray;
      margin-top:20px;
 }
@@ -56,34 +57,34 @@
 
 .radiobutton{
     margin-left:10px;
-
+    margin:10px;
  
 }
 .profimg{
     font-size: 18px;
     margin:12px;
-    margin-left:10px;
+
     color:red;
     background-color:white;
     border-style: none;
 }
-
-.registerb{
-
-    width:200px;
-    height:40px;
-    margin-top: 5px;
-     margin-left: 90px;
+.registerb {
+    width: 200px;
+    height: 40px;
+    margin-top: 12px;
+    margin-left: 88px;
     border-color: green;
     border-radius: 19px;
     background-color: white;
     font-size: 18px;
     border-width: 1px;
-  
-  
-           
-}      
+}    
    #passmsg{
         color:red;
-        margin-left: 50px;
+}
+.alertmsg{
+    display: none;
+    color:red;
+    text-align:none;
+
 }

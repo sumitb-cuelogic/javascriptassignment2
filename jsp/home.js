@@ -54,15 +54,26 @@ function done(){
       var userindex=searchUser(username,allentries);
 
         var todoobj=allentries[userindex].todo;
-        for(i=0;i<todoobj.length;i++)
-        {
-                if(document.getElementById("selecttask"+i).checked)
-                {
-                      todoobj.splice(i,1);//can delete only one element at a time
 
-                }
-            
+       
+         var list=[];
+    
+    for (i = 0; i < todoobj.length; i++) {
+        if (document.getElementById("selecttask" + i).checked == true) {
+          list.push(true);
         }
+        else
+            list.push(false);
+    }
+     
+     for (i = 0; i < todoobj.length; i++) {
+
+         if(list[i]===true){
+             todoobj.splice(i, 1);
+             list.splice(i, 1);
+              i=-1;
+         }
+      }
         localStorage.setItem("Allentries",JSON.stringify(allentries));
 
        location.reload();
